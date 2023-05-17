@@ -1,0 +1,28 @@
+/*
+Solution of assignment 4:
+
+Expected output:
+
+Hello Yaakov
+Good Bye Ben
+Good Bye Ten
+Good Bye Ryan
+Hello Zach
+Hello Miller
+Hello Molly
+Hello Jorge
+Hello Clayton
+Good Bye Jim
+*/
+
+(function() {
+    var names = ["Yaakov", "Ben", "Ten", "Ryan", "Zach", "Miller", "Molly", "Jorge", "Clayton", "Jim"];
+    for (var i = 0; i < names.length; i++) {
+        var firstLetter = names[i].charAt(0).toLowerCase();
+        if (firstLetter === 'j') {
+            byeSpeaker.speak(names[i]);
+        } else {
+            helloSpeaker.speak(names[i]);
+        }
+    }
+})();
